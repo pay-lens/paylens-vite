@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.22.5":
+"@babel/cli@npm:7.22.5":
   version: 7.22.5
   resolution: "@babel/cli@npm:7.22.5"
   dependencies:
@@ -65,7 +65,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0, @babel/core@npm:^7.22.5":
+"@babel/core@npm:7.22.5, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0":
   version: 7.22.5
   resolution: "@babel/core@npm:7.22.5"
   dependencies:
@@ -414,7 +414,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.16.0, @babel/plugin-proposal-class-properties@npm:^7.18.6":
+"@babel/plugin-proposal-class-properties@npm:7.18.6, @babel/plugin-proposal-class-properties@npm:^7.16.0":
   version: 7.18.6
   resolution: "@babel/plugin-proposal-class-properties@npm:7.18.6"
   dependencies:
@@ -465,7 +465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-optional-chaining@npm:^7.16.0, @babel/plugin-proposal-optional-chaining@npm:^7.21.0":
+"@babel/plugin-proposal-optional-chaining@npm:7.21.0, @babel/plugin-proposal-optional-chaining@npm:^7.16.0":
   version: 7.21.0
   resolution: "@babel/plugin-proposal-optional-chaining@npm:7.21.0"
   dependencies:
@@ -1450,7 +1450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/polyfill@npm:^7.12.1":
+"@babel/polyfill@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/polyfill@npm:7.12.1"
   dependencies:
@@ -1460,7 +1460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.16.4, @babel/preset-env@npm:^7.22.5":
+"@babel/preset-env@npm:7.22.5, @babel/preset-env@npm:^7.16.4":
   version: 7.22.5
   resolution: "@babel/preset-env@npm:7.22.5"
   dependencies:
@@ -1565,7 +1565,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.16.0, @babel/preset-react@npm:^7.22.5":
+"@babel/preset-react@npm:7.22.5, @babel/preset-react@npm:^7.16.0":
   version: 7.22.5
   resolution: "@babel/preset-react@npm:7.22.5"
   dependencies:
@@ -1716,6 +1716,26 @@ __metadata:
     "@emotion/weak-memoize": ^0.3.1
     stylis: 4.2.0
   checksum: 8eb1dc22beaa20c21a2e04c284d5a2630a018a9d51fb190e52de348c8d27f4e8ca4bbab003d68b4f6cd9cc1c569ca747a997797e0f76d6c734a660dc29decf08
+  languageName: node
+  linkType: hard
+
+"@emotion/core@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@emotion/core@npm:11.0.0"
+  checksum: d9beeff0c120ec4d3cd89aa74e1ee3ff658976f27d14820e4e8f8e9981b4461b4a78c9e9c0853397ba09dff36b4e19357858ac8773ee5eb72bfd4b185926b5f3
+  languageName: node
+  linkType: hard
+
+"@emotion/css@npm:^11.11.2":
+  version: 11.11.2
+  resolution: "@emotion/css@npm:11.11.2"
+  dependencies:
+    "@emotion/babel-plugin": ^11.11.0
+    "@emotion/cache": ^11.11.0
+    "@emotion/serialize": ^1.1.2
+    "@emotion/sheet": ^1.2.2
+    "@emotion/utils": ^1.2.1
+  checksum: 1edea109dfc31005243334bc351ba127220ea5c4986225e0f1b8f7aa71fb2f83fb8f51d8f5b8afb8432d4c6397c23f5061038449f2876888eecc6eac1dd2f0da
   languageName: node
   linkType: hard
 
@@ -2809,7 +2829,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest-axe@npm:^3.5.5":
+"@types/jest-axe@npm:3.5.5":
   version: 3.5.5
   resolution: "@types/jest-axe@npm:3.5.5"
   dependencies:
@@ -3946,7 +3966,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:^29.5.0":
+"babel-jest@npm:29.5.0":
   version: 29.5.0
   resolution: "babel-jest@npm:29.5.0"
   dependencies:
@@ -3963,7 +3983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^9.1.2":
+"babel-loader@npm:9.1.2":
   version: 9.1.2
   resolution: "babel-loader@npm:9.1.2"
   dependencies:
@@ -5487,7 +5507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^19.0.4":
+"eslint-config-airbnb@npm:19.0.4":
   version: 19.0.4
   resolution: "eslint-config-airbnb@npm:19.0.4"
   dependencies:
@@ -5531,7 +5551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.6.0, eslint-config-prettier@npm:^8.8.0":
+"eslint-config-prettier@npm:8.8.0, eslint-config-prettier@npm:^8.6.0":
   version: 8.8.0
   resolution: "eslint-config-prettier@npm:8.8.0"
   peerDependencies:
@@ -5542,7 +5562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-react-app@npm:^7.0.1":
+"eslint-config-react-app@npm:7.0.1":
   version: 7.0.1
   resolution: "eslint-config-react-app@npm:7.0.1"
   dependencies:
@@ -5577,7 +5597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-loader@npm:^4.0.2":
+"eslint-loader@npm:4.0.2":
   version: 4.0.2
   resolution: "eslint-loader@npm:4.0.2"
   dependencies:
@@ -5605,7 +5625,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-flowtype@npm:^8.0.3":
+"eslint-plugin-flowtype@npm:8.0.3, eslint-plugin-flowtype@npm:^8.0.3":
   version: 8.0.3
   resolution: "eslint-plugin-flowtype@npm:8.0.3"
   dependencies:
@@ -5619,7 +5639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.25.3, eslint-plugin-import@npm:^2.27.5":
+"eslint-plugin-import@npm:2.27.5, eslint-plugin-import@npm:^2.25.3, eslint-plugin-import@npm:^2.27.5":
   version: 2.27.5
   resolution: "eslint-plugin-import@npm:2.27.5"
   dependencies:
@@ -5657,6 +5677,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-jest@npm:27.2.2":
+  version: 27.2.2
+  resolution: "eslint-plugin-jest@npm:27.2.2"
+  dependencies:
+    "@typescript-eslint/utils": ^5.10.0
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ^5.0.0
+    eslint: ^7.0.0 || ^8.0.0
+    jest: "*"
+  peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+    jest:
+      optional: true
+  checksum: 98b63252d985f5dedf36ce9587dd4a0d24daf71ca8a997258343402c0d33ddd5070502378dafd9ac7fc0ef2e0d557b5c77f18e09ad73c71a52de8061db88293f
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-jest@npm:^25.3.0":
   version: 25.7.0
   resolution: "eslint-plugin-jest@npm:25.7.0"
@@ -5691,25 +5729,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^27.2.2":
-  version: 27.2.2
-  resolution: "eslint-plugin-jest@npm:27.2.2"
-  dependencies:
-    "@typescript-eslint/utils": ^5.10.0
-  peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.0.0
-    eslint: ^7.0.0 || ^8.0.0
-    jest: "*"
-  peerDependenciesMeta:
-    "@typescript-eslint/eslint-plugin":
-      optional: true
-    jest:
-      optional: true
-  checksum: 98b63252d985f5dedf36ce9587dd4a0d24daf71ca8a997258343402c0d33ddd5070502378dafd9ac7fc0ef2e0d557b5c77f18e09ad73c71a52de8061db88293f
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-jsx-a11y@npm:^6.5.1, eslint-plugin-jsx-a11y@npm:^6.7.1":
+"eslint-plugin-jsx-a11y@npm:6.7.1, eslint-plugin-jsx-a11y@npm:^6.5.1, eslint-plugin-jsx-a11y@npm:^6.7.1":
   version: 6.7.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.7.1"
   dependencies:
@@ -5735,7 +5755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^4.2.1":
+"eslint-plugin-prettier@npm:4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
@@ -5750,7 +5770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.3.0, eslint-plugin-react-hooks@npm:^4.6.0":
+"eslint-plugin-react-hooks@npm:4.6.0, eslint-plugin-react-hooks@npm:^4.3.0, eslint-plugin-react-hooks@npm:^4.6.0":
   version: 4.6.0
   resolution: "eslint-plugin-react-hooks@npm:4.6.0"
   peerDependencies:
@@ -5768,7 +5788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.27.1, eslint-plugin-react@npm:^7.32.1, eslint-plugin-react@npm:^7.32.2":
+"eslint-plugin-react@npm:7.32.2, eslint-plugin-react@npm:^7.27.1, eslint-plugin-react@npm:^7.32.1":
   version: 7.32.2
   resolution: "eslint-plugin-react@npm:7.32.2"
   dependencies:
@@ -7612,7 +7632,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-axe@npm:^7.0.1":
+"jest-axe@npm:7.0.1":
   version: 7.0.1
   resolution: "jest-axe@npm:7.0.1"
   dependencies:
@@ -7636,7 +7656,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^29.5.0":
+"jest-environment-jsdom@npm:29.5.0":
   version: 29.5.0
   resolution: "jest-environment-jsdom@npm:29.5.0"
   dependencies:
@@ -7746,7 +7766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-svg-transformer@npm:^1.0.0":
+"jest-svg-transformer@npm:1.0.0":
   version: 1.0.0
   resolution: "jest-svg-transformer@npm:1.0.0"
   peerDependencies:
@@ -8884,6 +8904,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"normalize.css@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "normalize.css@npm:8.0.1"
+  checksum: 4698cae88ec35e3f3e82f9f9402e6ffb906c27ccd6373cad88e6b3f5634fc7a043cb38702472299e5edb73825cf8b18d5fd9283f58829eddda79ea97453049a2
+  languageName: node
+  linkType: hard
+
 "npm-run-path@npm:^2.0.0":
   version: 2.0.2
   resolution: "npm-run-path@npm:2.0.2"
@@ -9361,13 +9388,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "paylens-vite@workspace:."
   dependencies:
-    "@babel/cli": ^7.22.5
-    "@babel/core": ^7.22.5
-    "@babel/plugin-proposal-class-properties": ^7.18.6
-    "@babel/plugin-proposal-optional-chaining": ^7.21.0
-    "@babel/polyfill": ^7.12.1
-    "@babel/preset-env": ^7.22.5
-    "@babel/preset-react": ^7.22.5
+    "@babel/cli": 7.22.5
+    "@babel/core": 7.22.5
+    "@babel/plugin-proposal-class-properties": 7.18.6
+    "@babel/plugin-proposal-optional-chaining": 7.21.0
+    "@babel/polyfill": 7.12.1
+    "@babel/preset-env": 7.22.5
+    "@babel/preset-react": 7.22.5
+    "@emotion/core": ^11.0.0
+    "@emotion/css": ^11.11.2
     "@emotion/react": 11.11.1
     "@emotion/styled": 11.11.0
     "@mui/material": 5.13.5
@@ -9375,33 +9404,34 @@ __metadata:
     "@testing-library/react": 14.0.0
     "@testing-library/react-hooks": 8.0.1
     "@testing-library/user-event": 14.4.3
-    "@types/jest-axe": ^3.5.5
+    "@types/jest-axe": 3.5.5
     "@types/react": 18.0.37
     "@types/react-dom": 18.0.11
     "@typescript-eslint/eslint-plugin": 5.59.0
     "@typescript-eslint/parser": 5.59.0
     "@vitejs/plugin-react-swc": 3.0.0
-    babel-jest: ^29.5.0
-    babel-loader: ^9.1.2
+    babel-jest: 29.5.0
+    babel-loader: 9.1.2
     eslint: 8.38.0
-    eslint-config-airbnb: ^19.0.4
+    eslint-config-airbnb: 19.0.4
     eslint-config-kentcdodds: 20.5.0
-    eslint-config-prettier: ^8.8.0
-    eslint-config-react-app: ^7.0.1
-    eslint-loader: ^4.0.2
-    eslint-plugin-flowtype: ^8.0.3
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-jest: ^27.2.2
-    eslint-plugin-jsx-a11y: ^6.7.1
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-react: ^7.32.2
-    eslint-plugin-react-hooks: ^4.6.0
+    eslint-config-prettier: 8.8.0
+    eslint-config-react-app: 7.0.1
+    eslint-loader: 4.0.2
+    eslint-plugin-flowtype: 8.0.3
+    eslint-plugin-import: 2.27.5
+    eslint-plugin-jest: 27.2.2
+    eslint-plugin-jsx-a11y: 6.7.1
+    eslint-plugin-prettier: 4.2.1
+    eslint-plugin-react: 7.32.2
+    eslint-plugin-react-hooks: 4.6.0
     eslint-plugin-react-refresh: 0.3.4
     husky: 8.0.0
-    jest-axe: ^7.0.1
-    jest-environment-jsdom: ^29.5.0
-    jest-svg-transformer: ^1.0.0
+    jest-axe: 7.0.1
+    jest-environment-jsdom: 29.5.0
+    jest-svg-transformer: 1.0.0
     jsdom: 22.1.0
+    normalize.css: ^8.0.1
     prettier: 2.8.8
     prettier-eslint: 15.0.1
     prettier-stylelint: 0.4.2

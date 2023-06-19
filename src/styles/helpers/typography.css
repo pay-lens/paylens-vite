@@ -1,0 +1,105 @@
+/**
+ * Typography
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+html,
+.font-family--body {
+  font-family: 'Open Sans', 'Roboto', 'Franklin Gothic Medium', Tahoma, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-family--title {
+  font-family: 'Quicksand', 'Montserrat', 'Roboto', 'Franklin Gothic Medium', Tahoma, Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  /* normal */
+  margin: 0;
+}
+
+h1,
+.font-size--1 {
+  font-size: 3.1428rem;
+  /* 44px */
+  line-height: 1.2727em;
+  /* 56px */
+}
+
+h2,
+.font-size--2 {
+  font-size: 2.2857rem;
+  /* 32px */
+  line-height: 1.125em;
+  /* 36px */
+}
+
+h3,
+.font-size--3 {
+  font-size: 1.7142rem;
+  /* 24px */
+  line-height: 1.25em;
+  /* 30px */
+}
+
+h4,
+.font-size--4 {
+  font-size: 1.2857rem;
+  /* 18px */
+  line-height: 1.3333em;
+  /* 24px */
+}
+
+h5,
+p,
+body,
+.font-size--5 {
+  font-size: 1rem;
+  /* 14px */
+  line-height: 1.5em;
+  /* 21px */
+}
+
+h6,
+small,
+.font-size--6 {
+  font-size: 0.8571rem;
+  /* 12px */
+  line-height: 1.1667em;
+  /* 14px */
+}
+
+caption,
+.caption {
+  font-size: 0.7143rem;
+  /* 10px */
+  line-height: 1.2em;
+  /* 12px */
+}
+
+.font-family--mono,
+code {
+  font-family: 'Fira Code', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+    'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+}
+
+p + p {
+  margin-top: 2ex;
+}
+
+a {
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}

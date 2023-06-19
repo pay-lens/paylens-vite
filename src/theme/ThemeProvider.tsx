@@ -1,6 +1,11 @@
 import React, { FC, ReactNode } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { createTheme, responsiveFontSizes, Theme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import {
+  createTheme,
+  responsiveFontSizes,
+  Theme,
+  ThemeProvider as MuiThemeProvider,
+} from '@mui/material/styles';
 
 import { getPalette } from './muiPalette';
 

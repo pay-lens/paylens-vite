@@ -1,21 +1,21 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, StrictMode, Suspense } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 
-import Header from './components/organisms/Header/Header';
 import ThemeProvider from './theme/ThemeProvider';
 
 import './styles';
 
 // Auto generates routes from files under ./pages
 // https://vitejs.dev/guide/features.html#glob-import
-const pages = import.meta.glob('./pages/*.jsx', { eager: true });
+const pages = import.meta.glob(['./pages/*.tsx', './pages/*.jsx'], { eager: true });
 
 const routes = Object.keys(pages).map((path) => {
-  const name = path.match(/\.\/pages\/(.*)\.jsx$/)[1];
+  const name = path.match(/\.\/pages\/(.*)\.tsx$/)[1];
+  const Component = React.lazy(pages[path]);
   return {
     name,
     path: name === 'Home' ? '/' : `/${name.toLowerCase()}`,
-    component: pages[path].default,
+    component: Component,
   };
 });
 
@@ -24,17 +24,29 @@ interface AppProps {
 }
 
 const App: FC<AppProps> = (props: AppProps) => (
-  <ThemeProvider>
-    <div {...props}>
-      <Header />
+  <StrictMode>
+    <ThemeProvider>
+      <div {...props}>
+        <nav>
+          <ul>
+            {routes.map(({ name, path }) => (
+              <li key={path}>
+                <Link to={path}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <div className='card'>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {routes.map(({ path, component: RouteComp }) => (
+              <Route key={path} path={path} element={<RouteComp />} />
+            ))}
+          </Routes>
+        </Suspense>
       </div>
-    </div>
-  </ThemeProvider>
+    </ThemeProvider>
+  </StrictMode>
 );
 
 export default App;

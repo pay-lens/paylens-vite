@@ -1,5 +1,8 @@
-import React, { FC, ReactNode, StrictMode, Suspense } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import React, { FC, ReactNode } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import loadable from '@loadable/component';
+
+import Link from './components/atoms/Link/Link';
 
 import ThemeProvider from './theme/ThemeProvider';
 
@@ -10,8 +13,13 @@ import './styles';
 const pages = import.meta.glob(['./pages/*.tsx', './pages/*.jsx'], { eager: true });
 
 const routes = Object.keys(pages).map((path) => {
+  console.log('run routes');
   const name = path.match(/\.\/pages\/(.*)\.tsx$/)[1];
-  const Component = React.lazy(pages[path]);
+  // Use loadable() instead of React.lazy() for SSR
+  const Component = loadable(pages[path]);
+
+  console.log('set route:', name, pages[path]);
+
   return {
     name,
     path: name === 'Home' ? '/' : `/${name.toLowerCase()}`,
@@ -23,8 +31,10 @@ interface AppProps {
   children?: ReactNode;
 }
 
-const App: FC<AppProps> = (props: AppProps) => (
-  <StrictMode>
+const App: FC<AppProps> = (props: AppProps) => {
+  console.log('run App', routes);
+
+  return (
     <ThemeProvider>
       <div {...props}>
         <nav>
@@ -37,16 +47,14 @@ const App: FC<AppProps> = (props: AppProps) => (
           </ul>
         </nav>
 
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            {routes.map(({ path, component: RouteComp }) => (
-              <Route key={path} path={path} element={<RouteComp />} />
-            ))}
-          </Routes>
-        </Suspense>
+        <Routes>
+          {routes.map(({ path, component: RouteComp }) => (
+            <Route key={path} path={path} element={<RouteComp />} />
+          ))}
+        </Routes>
       </div>
     </ThemeProvider>
-  </StrictMode>
-);
+  );
+};
 
 export default App;
